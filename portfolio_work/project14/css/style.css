@@ -1,0 +1,213 @@
+@charset "utf-8";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+
+/* 중단점 : 768 이하 (모바일)
+   중단점 : 768 이상 1023 이하 (태블릿)
+   중단점 : 1024 이상 (pc)
+*/
+/*font-family: 'IBM Plex Sans', sans-serif;*/
+*{box-sizing:border-box;}
+a{text-decoration:none; color:#444;}
+img{vertical-align:top;}
+/*공통영역*/
+.align{width:1280px; margin:0 auto;position:relative;}
+
+/*헤더영역*/
+
+.logo a{
+  display:block;
+  background:url('../images/logo.png')no-repeat;
+  background-size:100% 100%;
+  width:100px; height:20px;
+  overflow:hidden;
+  text-indent:-9999px;
+}
+header .align{
+  display:flex; 
+  height:70px;
+  justify-content:space-around;
+  align-items:center;
+}
+
+.gnb li{display:inline-block;margin:0 50px;}
+.gnb li a{padding:23px 0; font-family:'IBM Plex Sans', sans-serif;}
+.gnb li a:hover{
+  color:#780997; 
+  border-bottom:3px solid #780997;
+  font-weight:bold;
+}
+.circle{
+  background:#780997;color:#fff;
+  border:1px solid #780997; 
+  border-radius:29px;
+  padding:6px 35px 6px 20px;
+  display:inline-block;
+  position:relative;
+  font-size:12px;
+}
+.circle:after{
+  content: '';
+  display: inline-block;
+  background: url(../images/logo-icon.png)no-repeat;
+  background-size: 18px;
+  width: 25px;
+  height: 19px;
+  position: absolute;
+  bottom: 1px;
+  right: 7px;
+}
+
+/*비쥬얼배너 영역*/
+.visual{
+  height:400px; 
+  width:100%;
+  background:url(../images/header_bg.png);
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.visual h2{
+  font-family:'IBM Plex Sans', sans-serif;
+  font-size:30px;
+  font-weight:bold;
+  color:#fff;
+}
+.visual p{
+  font-family:'IBM Plex Sans', sans-serif;
+  font-size:15px;
+  color:#fff;
+  margin-top:10px;
+}
+.tab{
+  height:50px; 
+  border-bottom:1px solid #ddd;
+  text-align:center;
+}
+.tab li{
+  display:inline-block;
+  margin:20px;
+}
+.tab a{padding:10px;}
+.tab a:hover{
+  color:#780997;
+  border-bottom:2px solid #780997;
+}
+
+/*메뉴 탭 영역*/
+.menu{margin:70px 0 50px 0;}
+.menu ul{
+  display:flex;
+  flex-flow:row wrap;
+  width:100%;
+  text-align:center;
+}
+.menu li{
+  width:25%; 
+  border:1px solid #ddd;
+}
+.menu a{
+  width:100%;
+  height:100%;
+  background:#e6deda;
+  display:inline-block;
+  padding:10px;
+}
+.menu li a:hover{
+  color:#fff;
+  background:#36252f;
+}
+/*메뉴 사진 영역*/
+
+.menu_list{
+  display:flex;
+  flex-flow:row wrap;
+  text-align:center;
+}
+.menu_list li{
+  border:1px solid #ddd;
+  width:24.4%;
+  margin:5px;
+  height:400px;
+  position:relative;
+}
+.menu_list li:nth-child(1),
+.menu_list li:nth-child(5),
+.menu_list li:nth-child(9),
+.menu_list li:nth-child(13){margin-left:0;}
+
+.menu_list li:nth-child(4),
+.menu_list li:nth-child(8),
+.menu_list li:nth-child(12),
+.menu_list li:nth-child(16){margin-right:0;}
+
+.menu_list a{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  height:100%;
+}
+.menu_list p{margin-top:10px;}
+.red_circle{
+  width:5px; 
+  height:5px;
+  border-radius:50%;
+  background-color:red;
+  display:inline-block;
+  margin-right:2px;
+}
+.blue_circle{
+  width:5px; 
+  height:5px;
+  border-radius:50%;
+  background-color:blue;
+  display:inline-block;
+  margin-left:2px;
+}
+.type{
+  position:absolute;
+  padding:20px 8px;
+  top:15px; right:15px;
+  background:orange;
+  color:#fff;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  text-align:center;
+}
+
+/*푸터영역*/
+footer{background:#2c0039; margin-top:120px;}
+footer .align{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:40px 0;
+}
+footer .align li{display:inline-block;}
+.footer_t a{color:#fff; margin-right:10px;}
+.footer_t li:last-child a{margin-right:0}
+.box1{border-bottom:1px solid #ddd;}
+
+
+.box2 p {color:#fff;margin-top:10px;font-size:14px; word-spacing:5px;}
+
+.tel strong{color:#ff5e00; font-size:22px;font-weight:bold;}
+.tel ul{display:flex; flex-direction:column;}
+.address strong{font-weight:bold; font-size:17px;}
+.address ul{display:flex; flex-direction:column;}
+.address ul li:last-child p{margin-top:20px;font-size:12px;}
+footer .circle{background:#ff5e00;padding: 10px 38px 10px 11px;font-size: 12px;}
+.footer .circle:after {width: 24px; height: 21px;}
+/*몹일일때: flex 풀고
+sns만 포지션 앱솔 줘
+sns겹치면 중단점 하나 더 만들어주고
+밑으로 내려*/
+
+/*태블릿 영역*/
+@media all and(max-width:1023px){
+  .menu li{width:50%;}
+}

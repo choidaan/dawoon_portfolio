@@ -1,0 +1,93 @@
+@charset "utf-8";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css);
+@import "layout.css";
+*{margin:0; padding:0; list-style:none; box-sizing: border-box;}
+a{text-decoration:none; color:#444;}
+
+
+/* 헤더 영역 */
+header{position:relative;}
+#logo{
+    width:300px;
+    height:90px;
+    margin-top:20px;
+}
+.logo_c{display: flex; justify-content: center;}
+#logo>a{
+	display:block;
+	width:100%; height:100%;
+	background:url('../images/logo1.svg') no-repeat center center;
+	text-indent:-9999px;
+}
+#gnb a:hover{color:#beb9b4;}
+#utilwrap a:hover{color:#fff;}
+/*컨텐츠 영역*/
+
+/*BOX-1*/
+.box1{
+    background:url('../images/Untitled-1.png') no-repeat center center;
+    cursor:pointer;
+    text-align: right;
+}
+.box1>a{
+    color:#345573;
+    display:inline-block;
+    padding:30px;
+    font-weight:bold;
+}
+/* 타이틀영역 */
+.title{
+    height:40px; 
+    color:#3e3e3e;
+    font-size:25px;
+    text-align:center;
+    padding:10px;
+    border-bottom:1px solid #ddd;
+}
+.title>a{position:relative;}
+.title>a>img{
+    display: inline-block;
+    position: absolute;
+    left: 75px;
+}
+.title_b{
+    height:40px; 
+    color:#fff;
+    font-size:25px;
+    text-align:center;
+    padding:10px;
+    border-bottom:1px solid #ddd;
+    background:#345573;
+}
+
+.box2-1{background:url('../images/contents_img01.jpg')no-repeat center bottom;}
+.box2-2{background:url('../images/contents_img02.jpg')no-repeat center bottom;}
+.box3{background:url('../images/contents_img07.jpg')no-repeat center bottom;}
+.box4-1{background:url('../images/contents_img10.jpg')no-repeat;}
+.box4-2{background:url('../images/contents_img11.jpg')no-repeat}
+.box5{background:url('../images/contents_img09.jpg')no-repeat center bottom;}
+.box6-1{background:url('../images/contents_img03.jpg')no-repeat center bottom;
+position:relative;}
+.box6-2{background:url('../images/contents_img04.jpg')no-repeat center bottom;
+position:relative;}
+.box6-3{background:url('../images/contents_img05.jpg')no-repeat center bottom;}
+.box7-1{background:url('../images/contents_img08.jpg')no-repeat center bottom;} 
+.box7-2{background:url('../images/contents_img06.jpg')no-repeat center bottom;}
+
+.box4{position:relative;}
+.box4>.box4-1>.left_right>a{
+    position:absolute;
+    top:59%;
+}
+.left_right>a{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+.left_right>a:last-child{right:0;}
+
+.f-box{
+    width:1280px;
+    margin:0 auto;
+    text-align:center;
+}

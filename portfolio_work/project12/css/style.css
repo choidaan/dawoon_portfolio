@@ -1,0 +1,57 @@
+@charset "utf-8";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css);
+*{box-sizing:border-box; color:#444;}
+a{text-decoration:none;}
+img{vertical-align:top;}
+
+.wrap{width:1100px; margin:0 auto;}
+
+/*헤더 영역*/
+header .logo{text-align:center;}
+.gnb{margin-top:20px;}
+.menu{width:100%; display:flex; text-decoration:center;}
+.menu>li{width:220px; position:relative;}
+.menu a{
+  color:#fff; 
+  width:100%; 
+  background:#1c4199; 
+  display:block;
+  padding:10px 0;
+  text-align:center;
+}
+.menu>li.active>a{background:#37466c;}
+.submenu{display:none; position:absolute; width:100%; top:36px; left:0;}
+.submenu>li>a{background:#37466c;}
+.submenu>li>a:hover{background:#2c719d;}
+
+/*컨텐츠 영역*/
+.flex{
+  display:flex;
+  justify-content:space-between;
+  border:1px solid #ddd;
+}
+.left{width:200px; text-align:center; border-right:1px solid #ddd;}
+.left li{border-bottom:1px solid #ddd;}
+.left a{display:block;padding:20px 0; width:100%;height:100%; }
+.left li a:hover{background:#333; color:#f1f1f1;}
+.right{width:900px; padding: 30px;}
+.right strong{font-size:20px; color:#37466c;}
+.right p{color:#8a8a8a; line-height:1.8;}
+
+.right div{margin-bottom:30px;}
+
+.info dl{display:flex;}
+.info dt{color:#444; min-width:120px;}
+.info dd{color:#8a8a8a;}
+.info li+li{margin-top:10px;}
+
+/*푸터*/
+footer{
+  background:#ddd;
+  text-align:center;
+  border:1px solid #ddd;
+  border-top:0;
+  padding:25px 0;
+}
+footer p+p{margin-top:15px; color:#8a8a8a;}
+footer i{color:#8a8a8a; font-style:italic;}

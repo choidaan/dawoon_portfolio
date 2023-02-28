@@ -1,0 +1,139 @@
+@charset "urf-8";
+@import "layout.css";
+
+.wrap{ width:1440px;margin:0 auto;}
+.flex{
+        display:flex; 
+        justify-content:space-between;
+        align-items:center;
+    }
+/*헤더영역*/
+header{ background: #fff;}
+header h2 a{
+    background-image: url('../images/glass2.png');}
+
+#logo{width:238px; height:27px;}
+#logo>a{
+    display:block;
+    height:100%;
+    width:100%;
+    background: url('../images/logo2.png');
+    overflow:hidden;
+    text-indent: -9999px;
+}
+
+#gnb a{color:#000;}
+
+
+/*investment 영역*/
+#investment {
+    display: flex;
+     height:350px;
+     background:url('../images/submain.jpg') no-repeat center/cover;
+     margin: 0px 0 70px 0;
+     align-items: center;
+ }
+ #investment .tgroup{
+    position:relative;
+    margin: 0;
+    width: 100%;
+ }
+.tgroup{color:#fff;}
+.tgroup>h2{font-weight:500;}
+.tgroup>p{
+    font-weight:200;
+    line-height:1.5;
+}
+.align{
+    width:1440px; 
+    margin:0 auto;
+    text-align:center;
+}
+.align img{margin-bottom:70px;}
+.align ul{margin-bottom:70px;}
+.align li{
+    margin:20px 0;
+    color:rgb(170, 168, 168);
+    line-height:1.5;
+}
+.align li>strong{
+    display:block;
+    font-weight:bold;
+    color:#666;
+    margin-bottom:10px;
+    font-size:1.2rem;
+}
+.intro>li:nth-child(1)>span.line{
+    display:block;
+    width:600px;
+    height:1px;
+    background:rgb(170, 168, 168);
+    margin:20px auto;
+}
+.intro>li:nth-child(2)>span.line{
+    display:block;
+    width:450px;
+    height:1px;
+    background:rgb(170, 168, 168);
+    margin:20px auto;
+}
+.intro>li:nth-child(3)>span.line{
+    display:block;
+    width:500px;
+    height:1px;
+    background:rgb(170, 168, 168);
+    margin:20px auto;
+}
+.count{
+    flex-wrap:wrap;
+    width:1000px;
+    margin:0 auto;
+    height:600px;
+    display:flex;
+    margin-bottom:70px;
+}
+.count article{
+    background:orange;
+    margin-bottom:1%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+}
+.count article:nth-child(even){margin-left:1%;}
+
+.count article:nth-child(1){width:69%}
+.count article:nth-child(2){width:29%}
+.count article:nth-child(3){width:19%;}
+.count article:nth-child(4){width:79%;}
+.count article:nth-child(5){width:49%;}
+.count article:nth-child(6){width:49%;}
+
+.count_con>li:first-child{
+    color:#fff;
+    font-size:1.5rem;
+    line-height:2;
+    font-weight:500;
+}
+.count_con>li:last-child{
+    color:#fff;
+    font-weight:200;
+}
+.count p{
+    color:#fff;
+    font-size:1.5rem;
+    font-weight:500;
+}
+
+footer>.wrap{
+    width:1000px;
+    margin:0 auto;
+}
+
+
+
+
+
+
+
+

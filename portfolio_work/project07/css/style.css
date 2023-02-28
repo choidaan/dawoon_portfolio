@@ -1,0 +1,134 @@
+@charset "utf-8";
+*{margin:0; padding:0; list-style:none; box-sizing:border-box;}
+a{text-decoration:none;}
+a:link,a:visited,a:hover,a:active{color:#333;
+}
+.header,.main,.main_footer{
+	width:1200px;
+	margin:0 auto;
+}
+
+/*헤더 영역 css*/
+.header{
+	position:relative;
+	height:70px;
+}
+#logo{
+	position:absolute;
+	width:225px;
+	height:23px;
+	top:25px;
+}
+#logo>a{
+	display:block;
+	width:100%; height:100%;
+	background:url('../images/logo.png') no-repeat center center;
+	text-indent:-9999px;
+}
+.gnb>ul{
+	position:absolute;
+	height:70px;
+	right:0;
+}
+.gnb>ul>li{
+	float:left;
+	padding:25px 30px;
+}
+.gnb>ul>li:nth-child(4){border-right:1px solid #ddd;}
+
+
+/* 비주얼 배너 영역*/
+.visual_banner{
+	width:1920px;
+	position:relative;
+}
+.visual_banner a{
+	display:block;
+	width:31px;
+	height:52px;
+	text-indent: -9999px;
+}
+.icon_l{
+	background:url('../images/icon_ar_l.png') no-repeat;
+	position:absolute;
+	top:50%;
+	left:30px;
+	transform:translateY(-50px);
+}
+.icon_r{
+	background:url('../images/icon_ar_r.png') no-repeat;
+	position:absolute;
+	top:50%;
+	right:30px;
+	transform:translateY(-50px);
+}
+/*메인 영역*/
+.main{
+	padding:50px 0;
+	text-align: center;
+}
+.main>ul{
+	position:relative;
+	height:110px;
+	top:15px;
+}
+.main>ul>li{
+	width:400px;
+	float:left;
+	background:pink;
+	height:110px;
+	padding-top:15px;
+}
+.main>ul>li:first-child{
+	background:url('../images/link-thum01.png') no-repeat left top;
+}
+.main>ul>li:nth-child(2){
+	background:url('../images/link-thum02.png') no-repeat left top;
+}
+.main>ul>li:last-child{
+	background:url('../images/link-thum03.png') no-repeat left top;
+}
+.main dt{
+	color:darkblue;
+	font-weight:bold;
+	padding-bottom:5px;
+}
+.main dd{
+	font-size:11px;
+}
+
+/* 푸터영역 */
+footer{
+	height:120px;
+	border-top: 1px solid #ddd;
+}
+.ft_wrap{
+	width:1280px;
+	margin:0 auto;
+	text-align:center;
+}
+.ft_list {
+	display:flex;
+	justify-content: space-between;
+}
+.ft_wrap img{display:inline-block;}
+.foot{
+	display:inline-block;
+	padding:50px 0 50px 20px;
+}
+.ft_list>li>a{
+	display:block;
+	font-size:14px;
+	padding: 0 23px;
+	border-right:1px solid #ddd;
+	margin-bottom:10px;
+}
+.ft_list>li:first-child>a{padding-left:0;}
+.ft_list>li:last-child>a{
+	border-right:0;
+	padding-right:0;
+}
+
+.copy{
+	font-size:12px;
+}

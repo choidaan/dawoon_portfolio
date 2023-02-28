@@ -1,0 +1,126 @@
+@charset "utf-8";
+html{
+	font-size:14px; /*★수정*/
+}
+#container{
+	width:1280px;
+	margin:0 auto;
+	padding:0;
+	height:100%;
+	background:#fff;
+}
+
+header{
+	width:100%;
+	height:auto; /*기본값 높이 고정으로 할거면 px 수정하면 됨. ★수정*/
+}
+header>h2,#contents>h2{
+	width:0; height:0;
+	display:none;
+	visibility:hidden;
+	overflow:hidden;
+	text-indent:-9999px;	
+}
+
+#utilwrap{
+	display:flex;
+	flex-wrap:row wrap;
+	justify-content:flex-end;
+	width:100%;
+	height:30px; /*수정*/
+	background:#beb9b4;
+	font-size:12px;
+}
+
+#utilwrap ul,#gnb, #gnb ul{ /*패딩줘*/
+	display:flex;
+	flex-wrap:row wrap;
+	justify-content:space-between;
+	align-items:center;
+}
+
+#utilwrap ul li{
+	margin:0 30px; /*수정*/
+}
+
+#gnb{
+	justify-content:space-around;
+	height:70px; /*수정*/
+	text-align: center;;
+}
+
+#gnb ul li{ /*선택자 스타일 전체 변경*/
+	width:180px;
+	height:70px;
+}
+#gnb ul li a {/*선택자 스타일 전체 변경*/
+	display:block;
+	width:100%;
+	height:70px;
+	line-height:70px;
+	color:#2e2d2d;
+	font-weight:bold;
+	font-size:18px;
+	padding: 0 15px;
+}
+
+/*컨텐츠 영역*/
+#contents{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	background:#fff; /*수정*/
+	padding:10px 0;
+	margin-top:30px; /*수정*/
+}
+#contents>div{
+	width:295px;
+	margin:10px;
+	overflow:hidden;
+}
+#contents>div:nth-of-type(1){
+	border:1px solid #ddd;
+	width:610px;
+	height:500px;
+	overflow:hidden;
+}
+/*
+가장 작은 상자에 해당하는 sbox : 295x240+ 여백값20?
+*/
+.inner_sbox{
+	width:295px;
+	height:240px;
+	border:1px solid #ddd;
+	margin-bottom:20px;
+	overflow:hidden;
+}
+.m_zero{margin-bottom:0;}
+
+.inner_mbox{
+	width:295px;
+	height:500px;
+	border:1px solid #ddd;
+	margin-bottom:20px;
+	overflow:hidden;
+}
+#contents>div:nth-of-type(5){
+	border:1px solid #ddd;
+	overflow:hidden;
+}
+footer{
+	height:300px;
+	background:#beb9b4;
+}
+.f-box{position:relative;}
+.f-box>img:nth-child(2){padding: 40px 0 20px 0;}
+.f-box>img:nth-child(1){
+	position:absolute;
+	top: 35px; right: 30px;
+}
+.f-box p{line-height:3;margin-bottom:30px;}
+.option{text-align:center; padding:30px 0; position:relative;}
+.option img{
+	position:absolute;
+	top: 20px;
+	right: 100px;}
+

@@ -1,0 +1,202 @@
+@charset "utf-8";
+*{margin:0; padding:0; list-style:none; 
+  box-sizing:border-box;}
+img{vertical-align:top;}
+a{text-decoration:none; color:#666;}
+
+/*공통 영역*/
+.align{width:1200px; margin:0 auto;}
+
+
+/*헤더 영역*/
+header{height:200px; text-align:center;}
+.align>h1 img{width:50px; height:50px; margin:20px;}
+.util>li{display:inline-block;}
+.util>li>a{padding:0 20px;}
+.util{text-align:right;}
+.gnb{display:flex; padding:35px 10px 15px 10px;}
+.gnb>li{
+  width:200px;
+  display:block; 
+  font-size:16px;
+  font-weight:bold;
+}
+.gnb>li>a{padding:15px 10px;}
+.gnb>li>a:hover{
+  color:#15cbcb;
+  border-bottom:3px solid #15cbcb;
+}
+.main_img img{
+  display:block;
+  height:500px;
+  width:1200px;
+  margin-bottom:100px;}
+
+/*브래드 영역*/
+.brand{position:relative;}
+.tbox{
+  background:rgba(252, 251, 251, 0.65);
+  height:250px;
+  width:440px;
+  position:absolute;
+  top:60px; left:600px;
+}
+.tbox p{line-height:2.5; padding:20px;}
+.tbox strong{font-size:25px; color:#78b3c6;}
+.tbox mark{background:#deeff6;}
+.circle{
+  position:absolute; 
+  bottom:20px; right:20px; 
+  font-size:0;
+  text-align:right;
+}
+.circle a{
+  display:inline-block;
+  vertical-align:middle;
+  margin-left:40px;
+}
+.circle a:first-child{margin-left:0;}
+.circle a:hover img{transform:scale(1.1)}
+.circle a img{transition:transform .4s;}
+.brand::before{
+  content:'';
+  position:absolute;
+  top:0; right:0;
+  width:250px;
+  height:5px;
+  background:#78b3c6;
+}
+
+/*popular 영역*/
+.pop{
+  margin-bottom:150px; 
+  margin-top:100px;
+  display:flex;
+  justify-content:space-between;
+}
+.pop_text p{color:#ddd; line-height:2;}
+.pop_text strong{
+  color:#78b3c6;
+  font-size:35px;
+  font-weight:bold;
+  line-height:1.2;
+  display:block;
+  margin-bottom:15px;
+}
+.btn{
+  border:1px solid #78b3c6;
+  color:#78b3c6;
+  padding:5px 40px;
+  margin-top:15px;
+  display:inline-block;
+  font-size:20px;
+}
+.pop_img{text-align:right;}
+.pop_img img{width:210px; margin:0 10px;}
+.pop_img>ul>li{display:inline-block;}
+.pop_img a:hover img{padding-bottom: 20px; transform: translate(0,-20px);}
+.pop_img a img{height: 100%; transition: transform .2s ease, padding .2s ease;display:inline-block}
+
+/*title영역*/
+.title{text-align:center; margin-bottom:50px;}
+.title p{color:#666; line-height:2;}
+.title strong{font-size:30px;}
+
+
+/*story 영역*/
+.story_list{position:relative; height:900px;margin-bottom:100px;}
+.story_list>li:first-child>img{position:absolute; right:0;}
+.story_list>li:first-child{padding-left:200px;}
+.story_list>li:first-child p{
+  color:#666; 
+  line-height:2.5; 
+  display:inline-block;
+  padding-top:130px;
+}
+.story_list>li:first-child strong{
+  color:#236680; 
+  font-size:20px; 
+  font-weight:bold;
+}
+.story_list>li:last-child>img{position:absolute; left:0; bottom:0;}
+.story_list>li:last-child{text-align:right;}
+.story_list>li:last-child p{
+  color:#666; 
+  line-height:2.5; 
+  display:inline-block;padding-top: 300px;
+  padding-right: 200px;
+}
+.story_list>li:last-child strong{
+  color:#236680; 
+  font-size:20px; 
+  font-weight:bold;
+}
+
+.story_list>li:first-child>p::before{
+  content: '';
+  position: absolute;
+  top: 120px;
+  height: 200px;
+  left: 170px;
+  width: 5px;
+  background: #78b3c6;
+}
+
+.story_list>li:last-child>p::before{
+  content: '';
+  position: absolute;
+  bottom:110px;
+  height: 200px;
+  right: 170px;
+  width: 5px;
+  background: #78b3c6;
+}
+
+/*in 영역*/
+.in_tbox{text-align:center;}
+.in_tbox strong{font-size:30px; font-weight:bold; color:#666;}
+.in_tbox p{line-height:2;font-size:18px; color:#666}
+.in_tbox span{color:#78b3c6; }
+.in{margin:20px 0 60px 0;}
+.in>ul img{width:200px; height:200px;}
+.in>ul{display:flex; justify-content:space-between;}
+
+.in>ul>li a{   
+  width:100%; height:100%;
+  display:block;
+  position:relative;
+  overflow:hidden;
+}
+.in>ul>li a p{
+  position:absolute; z-index:999;
+  top:50%; left:50%;
+  color:#fff;
+  font-size:15px;
+  transform:translate(-50%,-50%);
+  opacity: 0;
+  border:2px solid #fff;
+  padding:3px 15px;
+}
+.in>ul>li a::after{
+  content:'';
+  width:100%; height:100%;
+  display:block;
+  position:absolute;
+  background:rgba(0,0,0,0.4);
+  top:0; left:0;
+  z-index:99;
+  opacity: 0;
+}
+.in>ul>li a:hover::after,
+.in>ul>li a:hover p{
+  opacity: 1;
+  transition:all .4s;
+}
+
+/*푸터영역*/
+footer{background:#deeff6; height:300px;}
+.ft_list{text-align:center;}
+.ft_list>li{display:inline-block; padding:30px;}
+.ft_list p{line-height:2; color:#666;}
+.sns{text-align:center;}
+.sns>li{display:inline-block; padding:30px 10px;}

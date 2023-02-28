@@ -1289,6 +1289,12 @@ html.drawer-open .mode {
   top: 50%;
   transform: translate(-50%,-50%);
 }
+.w-list_text {
+  text-align :center;
+  font-size: 14px;
+  color: #777;
+  padding-bottom: 50px;
+}
 .w-close {
   position: fixed;
   top: 0;
@@ -3009,6 +3015,11 @@ html.drawer-open .mode {
     height: 35px;
     top: 0;
   }
+  .w-list_text {
+    font-size: 12px;
+    color: #777;
+    padding-bottom: 30px;
+  }
   /*section4*/
   .contact {
     padding: 250px 0 100px 0;
@@ -3236,6 +3247,9 @@ html.drawer-open .mode {
   }
   .w-image .thumbimage {
     font-size: 11px;
+  }
+  .w-list_text {
+    font-size: 10px;
   }
   /*section4*/
   .qrcode img {

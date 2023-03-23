@@ -1339,7 +1339,7 @@ html.drawer-open .mode {
   color: #db4839;
   font-weight: 600;
   border-bottom: #1e1e1e 1px solid;
-  padding: 20px 30px;
+  padding: 20px 30px 10px 30px;
 }
 .w-list {
   padding: 110px;
@@ -1678,6 +1678,7 @@ html.drawer-open .mode {
   margin-bottom: 100px;
 }
 .card-left p {
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 25px;
   color: #1e1e1e;
   line-height: 35px;
@@ -1755,11 +1756,12 @@ html.drawer-open .mode {
   height: 110px;
   padding: 3px;
   border: 2px solid #db4839;
-  margin-right: 4px;
+  margin-right: 7px;
 }
 .qrcode p {
   margin-top: 10px;
   margin-right: 3px;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 .qrcode p br {
   display: none;
@@ -1787,7 +1789,7 @@ html.drawer-open .mode {
   font-size: 27px;
   color: #db4839;
   font-weight: 600;
-  font-family: 'Unbounded', cursive;
+  font-family: 'Unbounded', sans-serif;
 }
 .box .email p {
   text-align: center;
@@ -2181,9 +2183,9 @@ html.drawer-open .mode {
     width: 89px;
   }
   .responsive {
-    top: -112px;
+    top: -106px;
     right: -55px;
-    width: 65px;
+    width: 55px;
   }
   .ai {
     top: -6px;
@@ -2579,7 +2581,7 @@ html.drawer-open .mode {
     padding: 110px 80px;
   }
   .w-image .thumbimage {
-    font-size: 15px;
+    font-size: 13px;
     line-height: 20px;
   }
   /*section4*/
@@ -2645,7 +2647,7 @@ html.drawer-open .mode {
   }
   /*헤더*/
   header {
-    padding: 0 10px;
+    padding: 0 30px;
   }
   h1 a {
     font-size: 20px;
@@ -2653,6 +2655,8 @@ html.drawer-open .mode {
   /*모드*/
   .mode {
     right: 10px;
+    width: 26px;
+    height: 26px;
   }
   /*햄버거버튼 클릭시 - 메뉴*/
   .menu a {
@@ -3029,6 +3033,7 @@ html.drawer-open .mode {
     height: auto;
   }
   .card-left p {
+    font-family: 'Noto Sans KR', sans-serif;
     font-size: 17px;
     color: #1e1e1e;
   }

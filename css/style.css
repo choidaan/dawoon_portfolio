@@ -134,19 +134,6 @@ html {
   background: #f2e8de;
 }
 /*다크모드-section2*/
-.darkmode .about-t {
-  color: #f2e8de;
-}
-.darkmode .about-character .keywordbox span {
-  color: #f2e8de;
-}
-.darkmode .about-me .text p {
-  color: #f2e8de;
-}
-.darkmode .icon {
-  filter: none;
-}
-/*다크모드-section3*/
 .darkmode .file-text {
   color: #f2e8de;
 }
@@ -175,10 +162,12 @@ html {
 .darkmode .file-image .layer1 a .w-list {
   border-top: 1px solid #cfd6cd;
 }
+/*
 .darkmode .file-image li.layer1 strong {
   border-left: 1px solid #cfd6cd;
   border-top: 1px solid #cfd6cd;
 }
+*/
 .darkmode .file-image .layer1 strong::before {
   border-top: 2px solid #cfd6cd;
 }
@@ -235,6 +224,19 @@ html {
 }
 .darkmode .layer4 .w-imagebox {
   border: 1px solid #f2e8de;
+}
+/*다크모드-section3*/
+.darkmode .about-t {
+  color: #f2e8de;
+}
+.darkmode .about-character .keywordbox span {
+  color: #f2e8de;
+}
+.darkmode .about-me .text p {
+  color: #f2e8de;
+}
+.darkmode .icon {
+  filter: none;
 }
 /*다크모드-work-portfolio*/
 .darkmode .w-imagebox:before {
@@ -695,6 +697,7 @@ html.drawer-open .mode {
   height: 100px;
 }
 */
+
 /*section1*/
 .intro {
   position: relative;
@@ -820,7 +823,169 @@ html.drawer-open .mode {
       transform: translateX(-50%) scaleY(0);
   }
 }
+
 /*section2*/
+.file {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+.file-image {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+}
+.file-text {
+  text-align: center;
+}
+.file-text p:first-child {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 80px;
+  letter-spacing: 8px;
+}
+.file-text p:last-child {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 40px;
+  word-spacing: 47px;
+}
+.file-text em {
+  position: relative;
+  font-size: 110px;
+  font-weight: 600;
+}
+.file-text em:after {
+  content:'';
+  position: absolute;
+  display: block;
+  top: 50px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #db4839; 
+}
+.file-text span {
+  position: relative;
+}
+.file-text span:after {
+  content:'';
+  position: absolute;
+  display: block;
+  bottom: 14px;
+  right: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 15px;
+  background-color: #db4839; 
+}
+.file-image > ul > li {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.file-image li a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  z-index: 1;
+  transition: all .3s;
+} 
+.file-image .layer1 a {
+  height: 400px;
+}
+.file-image .layer2 a {
+  height: 300px;
+}
+.file-image .layer3 a {
+  height: 200px;
+}
+.file-image .layer4 a {
+  height: 100px;
+}
+.file-image .layer1 a:hover {
+  height: 570px;
+}
+.file-image .layer2 a:hover {
+  height: 470px;
+}
+.file-image .layer3 a:hover {
+  height: 370px;
+}
+.file-image .layer4 a:hover {
+  height: 270px;
+}
+.file-image .layer1 a .w-list {
+  background-color: #cfd6cd; 
+}
+.file-image .layer2 a .w-list {
+  background-color: #dcdddc; 
+}
+.file-image .layer3 a .w-list {
+  background-color: #cdb771; 
+}
+.file-image .layer4 a .w-list {
+  background-color: #f2e8de; 
+}
+.file-image li strong {
+  border-top-left-radius: 15px;
+  position: absolute;
+  top: -68px;
+  padding: 25px 0 25px 36px;
+  color: #db4839;
+  font-size: 19px;
+  min-width: 190px;
+}
+/*
+.file-image li.layer1 strong {
+  background-color: #cfd6cd;
+  left: 150px;
+}
+*/
+.file-image .layer2 strong {
+  background-color: #dcdddc;
+  left: 220px;
+}
+.file-image li.layer3 strong {
+  background-color: #cdb771;
+  left: 450px;
+}
+.file-image .layer4 strong {
+  background-color: #f2e8de;
+  left: 680px;
+}
+.file-image strong::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 41px;
+  left: 100%;
+  margin-left: -49px;
+  border-top-left-radius: 23px;
+  width: 168px;
+  height: 62px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+.file-image .layer1 strong::before {
+  background-color: #cfd6cd;
+}
+.file-image .layer2 strong::before {
+  background-color: #dcdddc;
+}
+.file-image .layer3 strong::before {
+  background-color: #cdb771;
+}
+.file-image .layer4 strong::before {
+  background-color: #f2e8de;
+}
+
+/*section3*/
 .about {
   padding-top: 160px;
   text-align: center;
@@ -1000,7 +1165,7 @@ html.drawer-open .mode {
     background-color: #dd4839;
     color: white;
 }
-/*about-character*/
+/*section3-character*/
 .about-character {
   overflow: hidden;
   position: relative;
@@ -1101,164 +1266,7 @@ html.drawer-open .mode {
 @keyframes moveLeft { from { -webkit-transform: translateX(0); transform: translateX(0); }
   to { -webkit-transform: translateX(-50%); transform: translateX(-50%); } }
 
-/*section3*/
-.file {
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: flex-end;
-}
-.file-image {
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 600px;
-}
-.file-text {
-  text-align: center;
-}
-.file-text p:first-child {
-  font-family: 'Bodoni Moda', serif;
-  font-size: 80px;
-  letter-spacing: 8px;
-}
-.file-text p:last-child {
-  font-family: 'Bodoni Moda', serif;
-  font-size: 40px;
-  word-spacing: 47px;
-}
-.file-text em {
-  position: relative;
-  font-size: 110px;
-  font-weight: 600;
-}
-.file-text em:after {
-  content:'';
-  position: absolute;
-  display: block;
-  top: 50px;
-  right: 10px;
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  background-color: #db4839; 
-}
-.file-text span {
-  position: relative;
-}
-.file-text span:after {
-  content:'';
-  position: absolute;
-  display: block;
-  bottom: 14px;
-  right: -15px;
-  width: 10px;
-  height: 10px;
-  border-radius: 15px;
-  background-color: #db4839; 
-}
-.file-image > ul > li {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-.file-image li a {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  z-index: 1;
-  transition: all .3s;
-} 
-.file-image .layer1 a {
-  height: 400px;
-}
-.file-image .layer2 a {
-  height: 300px;
-}
-.file-image .layer3 a {
-  height: 200px;
-}
-.file-image .layer4 a {
-  height: 100px;
-}
-.file-image .layer1 a:hover {
-  height: 570px;
-}
-.file-image .layer2 a:hover {
-  height: 470px;
-}
-.file-image .layer3 a:hover {
-  height: 370px;
-}
-.file-image .layer4 a:hover {
-  height: 270px;
-}
-.file-image .layer1 a .w-list {
-  background-color: #cfd6cd; 
-}
-.file-image .layer2 a .w-list {
-  background-color: #dcdddc; 
-}
-.file-image .layer3 a .w-list {
-  background-color: #cdb771; 
-}
-.file-image .layer4 a .w-list {
-  background-color: #f2e8de; 
-}
-.file-image li strong {
-  border-top-left-radius: 15px;
-  position: absolute;
-  top: -68px;
-  padding: 25px 0 25px 36px;
-  color: #db4839;
-  font-size: 19px;
-  min-width: 190px;
-}
-.file-image li.layer1 strong {
-  background-color: #cfd6cd;
-  left: 150px;
-}
-.file-image .layer2 strong {
-  background-color: #dcdddc;
-  left: 300px;
-}
-.file-image li.layer3 strong {
-  background-color: #cdb771;
-  left: 450px;
-}
-.file-image .layer4 strong {
-  background-color: #f2e8de;
-  left: 600px;
-}
-.file-image strong::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 41px;
-  left: 100%;
-  margin-left: -49px;
-  border-top-left-radius: 23px;
-  width: 168px;
-  height: 62px;
-  transform: rotate(45deg);
-  z-index: -1;
-}
-.file-image .layer1 strong::before {
-  background-color: #cfd6cd;
-}
-.file-image .layer2 strong::before {
-  background-color: #dcdddc;
-}
-.file-image .layer3 strong::before {
-  background-color: #cdb771;
-}
-.file-image .layer4 strong::before {
-  background-color: #f2e8de;
-}
+
 
 /*work-portfolio*/
 .w-body {
@@ -1849,7 +1857,7 @@ html.drawer-open .mode {
 .footer a {
   padding: 20px 0;
   color: #777;
-  font-size: 11px;
+  font-size: 13px;
 }
 .footer_inner {
   width: 1200px;
@@ -1917,7 +1925,56 @@ html.drawer-open .mode {
     height: 70px;
   }
 
+
   /*section2*/
+  .file-text span:after {
+    bottom: 8px;
+    right: -12px;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+  }
+  .file-text p:first-child {
+    font-size: 70px;
+  } 
+  .file-text p:last-child {
+    font-size: 30px;
+    word-spacing: 50px;
+  }
+  .file-image {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 510px;
+  }
+  .file-image .layer4 a {
+    height: 70px;
+  }
+  .file-image .layer3 a {
+    height: 160px;
+  }
+  .file-image .layer2 a {
+    height: 250px;
+  }
+  .file-image .layer1 a {
+    height: 340px;
+  }
+  .file-text em {
+    position: relative;
+    font-size: 80px;
+    font-weight: 600;
+  }
+  .file-text img {
+    width: 100px;
+  }
+  .file-text em:after {
+    top: 35px;
+    right: 5px;
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+  }
+  /*section3*/
   .about-t {
     margin-bottom: 75px;
   }
@@ -2008,54 +2065,7 @@ html.drawer-open .mode {
     width: 235px;
     height: 125px;
   }
-  /*section3*/
-  .file-text span:after {
-    bottom: 8px;
-    right: -12px;
-    width: 8px;
-    height: 8px;
-    border-radius: 8px;
-  }
-  .file-text p:first-child {
-    font-size: 70px;
-  } 
-  .file-text p:last-child {
-    font-size: 30px;
-    word-spacing: 50px;
-  }
-  .file-image {
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 510px;
-  }
-  .file-image .layer4 a {
-    height: 70px;
-  }
-  .file-image .layer3 a {
-    height: 160px;
-  }
-  .file-image .layer2 a {
-    height: 250px;
-  }
-  .file-image .layer1 a {
-    height: 340px;
-  }
-  .file-text em {
-    position: relative;
-    font-size: 80px;
-    font-weight: 600;
-  }
-  .file-text img {
-    width: 100px;
-  }
-  .file-text em:after {
-    top: 35px;
-    right: 5px;
-    width: 13px;
-    height: 13px;
-    border-radius: 13px;
-  }
+
   /*section4*/
   .postcard > div {
     height: 446px;
@@ -2133,7 +2143,68 @@ html.drawer-open .mode {
     border-radius: 9px;
     background-color: #dd4839;
   }
+
   /*section2*/
+  .file-text p:first-child {
+    font-size: 60px;
+  }
+  .file-text p:last-child {
+   font-size: 25px;
+  }
+  .file-text img {
+   width: 88px;
+  }
+  .file-text em:after {
+    top: 29px;
+    right: 4px;
+    width: 11px;
+    height: 11px;
+    border-radius: 11px;
+  }
+  .file-text em {
+    position: relative;
+    font-size: 70px;
+    font-weight: 600;
+  }
+  /*
+  .file-image li.layer1 strong {
+    background-color: #cfd6cd;
+    left: 80px;
+  }
+  */
+  .file-image .layer2 strong {
+    background-color: #dcdddc;
+    left: 200px;
+  }
+  .file-image li.layer3 strong {
+    left: 400px;
+  }
+  .file-image li.layer4 strong {
+    left: 600px;
+  }
+  .file-image li strong {
+    border-top-left-radius: 15px;
+    position: absolute;
+    top: -58px;
+    padding: 20px 0 20px 30px;
+    color: #db4839;
+    font-size: 18px;
+    min-width: 160px;
+  }
+  .file-image .layer1 a:hover {
+    height: 520px;
+  }
+  .file-image .layer2 a:hover {
+    height: 420px;
+  }
+  .file-image .layer3 a:hover {
+    height: 320px;
+  }
+  .file-image .layer4 a:hover {
+    height: 220px;
+  }
+
+  /*section3*/
   .face {
     width: 450px;
   }
@@ -2236,63 +2307,7 @@ html.drawer-open .mode {
     width: 220px;
     height: 115px;
   }
-  /*section3*/
-  .file-text p:first-child {
-    font-size: 60px;
-  }
-  .file-text p:last-child {
-   font-size: 25px;
-  }
-  .file-text img {
-   width: 88px;
-  }
-  .file-text em:after {
-    top: 29px;
-    right: 4px;
-    width: 11px;
-    height: 11px;
-    border-radius: 11px;
-  }
-  .file-text em {
-    position: relative;
-    font-size: 70px;
-    font-weight: 600;
-  }
-  .file-image li.layer1 strong {
-    background-color: #cfd6cd;
-    left: 80px;
-  }
-  .file-image .layer2 strong {
-    background-color: #dcdddc;
-    left: 230px;
-  }
-  .file-image li.layer3 strong {
-    left: 380px;
-  }
-  .file-image li.layer4 strong {
-    left: 530px;
-  }
-  .file-image li strong {
-    border-top-left-radius: 15px;
-    position: absolute;
-    top: -58px;
-    padding: 20px 0 20px 30px;
-    color: #db4839;
-    font-size: 18px;
-    min-width: 160px;
-  }
-  .file-image .layer1 a:hover {
-    height: 520px;
-  }
-  .file-image .layer2 a:hover {
-    height: 420px;
-  }
-  .file-image .layer3 a:hover {
-    height: 320px;
-  }
-  .file-image .layer4 a:hover {
-    height: 220px;
-  }
+
   /*work-portfolio*/
   .w-container h3 {
     font-size: 60px;
@@ -2421,8 +2436,69 @@ html.drawer-open .mode {
   .intro-txt .port {
     letter-spacing: 17px;
   }
+ 
   /*section2*/
-  .about-me {
+  .file-text p:first-child {
+    font-size: 50px;
+  }
+  .file-text p:last-child {
+    font-size: 23px;
+  }
+  .file-text img {
+    width: 80px;
+  }
+  .file-text em {
+    font-size: 60px;
+  }
+  .file-text em:after {
+    top: 24px;
+    right: 1px;
+    width: 9px;
+    height: 9px;
+    border-radius: 9px;
+  }
+  .file .w-list {
+    margin: 0 auto;
+  }
+  .file .w-list ul li {
+    width: calc(50% - 15px);
+  }
+  .file-image {
+      height: 525px;
+  }
+  .file-image li strong {
+    top: -58px;
+    min-width: 140px;
+  }
+  /*
+  .file-image li.layer1 strong {
+    left: 70px;
+  }
+  */
+  .file-image li.layer2 strong {
+   left: 130px;
+  }  
+  .file-image li.layer3 strong {
+    left: 300px;
+  }
+  .file-image li.layer4 strong {
+    left: 470px;
+  }
+  .file-image .layer1 a:hover {
+    height: 500px;
+  }
+  .file-image .layer2 a:hover {
+    height: 400px;
+  }
+  .file-image .layer3 a:hover {
+    height: 300px;
+  }
+  .file-image .layer4 a:hover {
+    height: 200px;
+  }
+
+   /*section3*/
+   .about-me {
     max-width: 700px;
   }
   .about-character .keywordbox span {
@@ -2501,63 +2577,7 @@ html.drawer-open .mode {
     font-size: 17px;
     padding: 4px 16px;
   }
-  /*section3*/
-  .file-text p:first-child {
-    font-size: 50px;
-  }
-  .file-text p:last-child {
-    font-size: 23px;
-  }
-  .file-text img {
-    width: 80px;
-  }
-  .file-text em {
-    font-size: 60px;
-  }
-  .file-text em:after {
-    top: 24px;
-    right: 1px;
-    width: 9px;
-    height: 9px;
-    border-radius: 9px;
-  }
-  .file .w-list {
-    margin: 0 auto;
-  }
-  .file .w-list ul li {
-    width: calc(50% - 15px);
-  }
-  .file-image {
-      height: 525px;
-  }
-  .file-image li strong {
-    top: -58px;
-    min-width: 140px;
-  }
-  .file-image li.layer1 strong {
-    left: 70px;
-  }
-  .file-image li.layer2 strong {
-   left: 220px;
-  }  
-  .file-image li.layer3 strong {
-    left: 370px;
-  }
-  .file-image li.layer4 strong {
-    left: 520px;
-  }
-  .file-image .layer1 a:hover {
-    height: 500px;
-  }
-  .file-image .layer2 a:hover {
-    height: 400px;
-  }
-  .file-image .layer3 a:hover {
-    height: 300px;
-  }
-  .file-image .layer4 a:hover {
-    height: 200px;
-  }
+
   /*work-portfolio*/
   .w-container h3{
     font-size: 50px;
@@ -2732,7 +2752,76 @@ html.drawer-open .mode {
   .scroll.hide {
     opacity: 0;
   }
+ 
   /*section2*/
+  .file {
+    height: auto;
+    padding-top:40px;
+  }
+  .file-image {
+    height: 650px;
+  }
+  .file-text {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  .file-text p:first-child {
+    font-size: 55px;
+    line-height: 55px;
+  }
+  .file-text p:last-child {
+    font-size: 21px;
+    margin-top: 14px;
+    word-spacing: 38px;
+    line-height: 45px;
+  }
+  .file-text img {
+    width: 70px;
+  }
+  .file-text em {
+    font-size: 54px;
+  }
+  .file-text span:after {
+    right: -10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+  }
+  .file-text em:after {
+    right: 4px;
+    width: 7px;
+    height: 7px;
+    border-radius: 7px;
+  }
+  .file-image li strong {
+    top: -47px;
+    min-width: 90px;
+    padding: 16px 0 16px 20px;
+    font-size: 15px;
+  }
+  /*
+  .file-image li.layer1 strong {
+    left: 50px;
+  }
+  */
+  .file-image li.layer2 strong {
+    left: 90px;
+  }
+  .file-image li.layer3 strong {
+    left: 180px;
+  }
+  .file-image li.layer4 strong {
+    left: 270px;
+  }
+  .file .w-list {
+    margin: 0 auto;
+    padding: 90px 30px;
+  }
+  .file .w-list ul li {
+    width: 100%;
+  }
+
+  /*section3*/
   .about-me {
     max-width: 350px;
     padding: 0 10px;
@@ -2894,71 +2983,7 @@ html.drawer-open .mode {
   .about-character .keywordbox:nth-child(2) {
     top: 85px;
   }
-  /*section3*/
-  .file {
-    height: auto;
-    padding-top:40px;
-  }
-  .file-image {
-    height: 650px;
-  }
-  .file-text {
-    max-width: 380px;
-    margin: 0 auto;
-  }
-  .file-text p:first-child {
-    font-size: 55px;
-    line-height: 55px;
-  }
-  .file-text p:last-child {
-    font-size: 21px;
-    margin-top: 14px;
-    word-spacing: 38px;
-    line-height: 45px;
-  }
-  .file-text img {
-    width: 70px;
-  }
-  .file-text em {
-    font-size: 54px;
-  }
-  .file-text span:after {
-    right: -10px;
-    width: 6px;
-    height: 6px;
-    border-radius: 6px;
-  }
-  .file-text em:after {
-    right: 4px;
-    width: 7px;
-    height: 7px;
-    border-radius: 7px;
-  }
-  .file-image li strong {
-    top: -47px;
-    min-width: 90px;
-    padding: 16px 0 16px 20px;
-    font-size: 15px;
-  }
-  .file-image li.layer1 strong {
-    left: 50px;
-  }
-  .file-image li.layer2 strong {
-    left: 90px;
-  }
-  .file-image li.layer3 strong {
-    left: 130px;
-  }
-  .file-image li.layer4 strong {
-    left: 170px;
-  }
-  .file .w-list {
-    margin: 0 auto;
-    padding: 90px 30px;
-  }
-  .file .w-list ul li {
-    width: 100%;
-  }
+
   /*work - portfolio*/
   .close-button {
     height: 100%;
@@ -3171,7 +3196,7 @@ html.drawer-open .mode {
     padding: 0 0 20px 0;
   }
   .footer, .footer a {
-    font-size: 10px;
+    font-size: 11px;
   }
 }
 
@@ -3192,25 +3217,8 @@ html.drawer-open .mode {
     height: 45px;
     top: -5px;
   }
+  
   /*section2*/
-  .about-me .text p {
-    font-size: 13px;
-    line-height: 28px;
-  }
-  .drawio {
-    left: -39px;
-    width: 33px;
-  }
-  .xd {
-    right: -41px;
-    width: 40px;
-  }
-  .ai {
-    top: -23px;
-    right: -40px;
-    width: 30px;
-  }
-  /*section3*/
   .file-text {
     max-width: 350px;
   }
@@ -3236,6 +3244,35 @@ html.drawer-open .mode {
     height: 5px;
     border-radius: 5px;
   }
+  .file-image li.layer2 strong {
+    left: 50px;
+  }
+  .file-image li.layer3 strong {
+    left: 120px;
+  }
+  .file-image li.layer4 strong {
+    left: 190px;
+  }
+
+  /*section3*/
+  .about-me .text p {
+    font-size: 13px;
+    line-height: 28px;
+  }
+  .drawio {
+    left: -39px;
+    width: 33px;
+  }
+  .xd {
+    right: -41px;
+    width: 40px;
+  }
+  .ai {
+    top: -23px;
+    right: -40px;
+    width: 30px;
+  }
+
   /*work-portfolio*/
   .w-header h1 {
     padding: 0 30px;

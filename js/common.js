@@ -28,9 +28,7 @@ $(document).ready(function(){
     $('html').toggleClass('darkmode');
     return false;
   });
-  
-  clock();
-  setInterval(clock, 1000);
+ 
 
 });
 
@@ -50,3 +48,6 @@ function clock() {
   }
   $('.w-popup_time').html(hours + ':' + minutes);
 }
+ 
+clock();
+setInterval(clock, 1000);
